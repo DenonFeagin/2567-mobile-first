@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*, *:after, *:before {
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	background-color: black;
+	margin: 0 auto;
+	width: 81%;
+}
+
+.row:after {
+	/* Content MUST be here for this to work*/
+	clear: both;
+	content: "";
+	display: table;
+}
+
+img {
+	max-width: 100%;
+}
+
+figcaption {
+	color: white;
+}
+
+[class*='col-'] /* Locating any class that has col- */ {
+	float: left;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+
+.col-1-1 {
+	width: 100%;
+}
+
+.col-1-2 {
+	width: 50%;
+}
+
+.col-1-3 {
+	width: 33.33%;
+}
+
+.col-2-3 {
+	width: 66.671%;
+}
+
+.col-1-4 {
+	width: 25%;
+}
+
+.col-3-4 {
+	width: 75%;
+}
+
+.col-1-5 {
+	width: 20%;
+}
+
+.col-2-5 {
+	width: 40%;
+}
+
+.col-3-5 {
+	width: 60%;
+}
+
+.col-1-6 {
+	width: 16.666%;
+}
+
+.col-5-6 {
+	width: 83.33%;
+}
+
+.col-1-7 {
+	width: 14.285%;
+}
+
+.col-6-7 {
+	width: 85.71%;
+}
+
+.col-1-8 {
+	width: 12.5%;
+}
+
+.col-7-8 {
+	width: 87.5%;
+}
+
+.col-1-9 {
+	width: 11.111%;
+}
+
+.col-8-9 {
+	width: 88.888%;
+}
+
+.col-1-10 {
+	width: 10%;
+}
+
+.col-9-10 {
+	width: 90%;
+}
+
+.col-1-11 {
+	width: 9.090%;
+}
+
+.col-10-11 {
+	width: 90.9%;
+}
+
+.col-1-12 {
+	width: 8.333%;
+}
+
+.col-11-12 {
+	width: 91.663%;
+}
+
+.red {
+	background-color: red;
+	height: 50px;
+}
+
+.teal {
+	background-color: teal;
+	height: 50px;
+}
+
+@media (max-width:480px) {
+	.wrapper {
+		width: 95%;
+	}
+	
+	.col-1-4:nth-child(2), .col-sm-100, .col-1-6.col-sm-33:nth-child(3), .col-1-8.col-sm-25:nth-child(4), .col-1-9.col-sm-33:nth-child(3), .col-1-9.col-sm-33:nth-child(6), .col-1-10.col-sm-50:nth-child(even), .col-1-12.col-sm-25:nth-child(4), .col-1-12.col-sm-25:nth-child(8) {
+		padding-right: 0;
+	}
+	
+	.col-sm-50 {
+		width: 50%;
+	}
+	
+	.col-sm-100 {
+		width: 100%;
+	}
+	
+	.col-sm-33 {
+		width: 33.333%;
+	}
+	
+	.col-sm-25 {
+		width: 25%;
+	}
+}
+
+/*
+@media (max-width:420px) {
+	.wrapper {
+		width: 99%;
+	}
+}
+*/
+
