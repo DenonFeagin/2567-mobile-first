@@ -36,6 +36,15 @@ figcaption {
 	margin-bottom: 20px;
 }
 
+.f-right {
+	float: right;
+}
+
+.block-center {
+	float: none;
+	margin: 0 auto;
+}
+
 [class*='col-']:last-of-type {
 	padding-right: 0;
 }
@@ -82,6 +91,10 @@ figcaption {
 
 .col-5-6 {
 	width: 83.33%;
+}
+
+.col-5-12 {
+	width: 41.665%;
 }
 
 .col-1-7 {
@@ -143,28 +156,22 @@ figcaption {
 }
 
 @media (max-width:480px) {
+	
 	.wrapper {
 		width: 95%;
 	}
 	
-	.col-1-4:nth-child(2), .col-sm-100, .col-1-6.col-sm-33:nth-child(3), .col-1-8.col-sm-25:nth-child(4), .col-1-9.col-sm-33:nth-child(3), .col-1-9.col-sm-33:nth-child(6), .col-1-10.col-sm-50:nth-child(even), .col-1-12.col-sm-25:nth-child(4), .col-1-12.col-sm-25:nth-child(8) {
+	.hide-sm {
+		display: none;
+	}
+	
+	.col-1-4, .col-1-2, .col-1-3, .col-1-6 {
+		width: 100%;
 		padding-right: 0;
 	}
 	
-	.col-sm-50 {
-		width: 50%;
-	}
-	
-	.col-sm-100 {
-		width: 100%;
-	}
-	
-	.col-sm-33 {
-		width: 33.333%;
-	}
-	
-	.col-sm-25 {
-		width: 25%;
+	.col-5-12 {
+		width: 90%;
 	}
 }
 
