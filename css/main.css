@@ -1,6 +1,31 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Sub Menu
+	3.3 - Footer Menu
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+	3.2 - Section Name
+	3.3 - Section Name
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+--------------------------------------------------------------*/
 *, *:after, *:before {
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -9,8 +34,58 @@
 	box-sizing: border-box;
 }
 
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+--------------------------------------------------------------*/
+body {
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+}
+
+/*------------ 1.1 Headings ------------*/
+h2 {
+	color: #fff;
+	border-left: 10px solid #E0312F;
+	font: 40px Gotham Black, Helvetica Neue, Helvetica, Arial," sans-serif";
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+/*------------ 1.2 Body Copy ------------*/
+#bg-hero .col-1-2 p:first-child {
+	font: 60px Gotham Black, Helvetica Neue, Helvetica, Arial," sans-serif";
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.col-1-2 p {
+	color: #fff;
+}
+
+/*------------ 1.5 Lists ------------*/
+nav ul {
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	color: #fff;
+	font: 700 14px Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav li a:hover {
+	border-bottom: 5px solid #fff;
+}
+
+/*--------------------------------------------------------------
+3.0 - CONTENT
+--------------------------------------------------------------*/
+/*------------ 3.1 Site Structure ------------*/
 .wrapper {
-	background-color: black;
 	margin: 0 auto;
 	width: 81%;
 }
@@ -153,6 +228,28 @@ figcaption {
 .teal {
 	background-color: teal;
 	height: 50px;
+}
+
+/*--------------------------------------------------------------
+4.0 - MEDIA
+--------------------------------------------------------------*/
+#bg-hero {
+	background: url("../img/hero-img.jpg") no-repeat;
+}
+/*--------------------------------------------------------------
+5.0 - UTILITIES
+--------------------------------------------------------------*/
+/*------------ 5.1 Background Colors ------------*/
+body > header {
+	background-color: #E0312F;
+}
+
+.work-bg-blk {
+	background-color: #212121;
+}
+
+.work-bg-gray {
+	background-color: #D0D0CF;
 }
 
 @media (max-width:480px) {
